@@ -1,6 +1,6 @@
 # 🛡️ API de Autenticação com JWT (Node.js + Express + PostgresSQL)
 
-Este projeto é uma aplicação backend com autenticação de usuários via **JWT**, utilizando **Node.js**, **Express** e **MongoDB**, seguindo uma arquitetura em camadas.
+Este projeto é uma aplicação backend com autenticação de usuários via **JWT**, utilizando **Node.js**, **Express** e **PostgresSQL**, seguindo uma arquitetura em camadas.
 
 ## 📁 Estrutura de Diretórios
 
