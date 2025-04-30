@@ -5,17 +5,29 @@ Este projeto é uma aplicação backend com autenticação de usuários via **JW
 ## 📁 Estrutura de Diretórios
 
 .
+
 ├── app.js
+
 ├── controllers
+
 ├── database
+
 ├── middlewares
+
 ├── models
+
 ├── node_modules
+
 ├── package.json
+
 ├── package-lock.json
+
 ├── README.MD
+
 ├── requests
+
 ├── routes
+
 └── services
 
 ## ⚙️ Instalação
@@ -49,20 +61,20 @@ chmod +x requests/*.sh  # (apenas uma vez para tornar executáveis)
 
 ## 🔍 Lista de testes incluídos:
 Teste	Arquivo
-✅ Registro bem-sucedido	register_success.sh
-❌ E-mail duplicado	register_email_duplicado.sh
-❌ Senha inválida	register_senha_invalida.sh
-❌ E-mail inválido	register_email_invalido.sh
-❌ JSON mal formatado (registro)	register_mal_formatado.sh
-✅ Login bem-sucedido	login_success.sh
+✅ Registro bem-sucedido	          register_success.sh
+❌ E-mail duplicado	                register_email_duplicado.sh
+❌ Senha inválida	                  register_senha_invalida.sh
+❌ E-mail inválido	                register_email_invalido.sh
+❌ JSON mal formatado (registro)	  register_mal_formatado.sh
+✅ Login bem-sucedido	              login_success.sh
 ❌ Login com e-mail não cadastrado	login_email_invalido.sh
-❌ Login com senha errada	login_senha_errada.sh
-❌ JSON mal formatado (login)	login_mal_formatado.sh
-✅ Acesso com token válido	protected_token_valido.sh
-❌ Acesso sem token	protected_sem_token.sh
-❌ Acesso com token inválido	protected_token_invalido.sh
-❌ Token mal formatado	protected_mal_formatado.sh
+❌ Login com senha errada	          login_senha_errada.sh
+❌ JSON mal formatado (login)	      login_mal_formatado.sh
+✅ Acesso com token válido	        protected_token_valido.sh
+❌ Acesso sem token	                protected_sem_token.sh
+❌ Acesso com token inválido	      protected_token_invalido.sh
+❌ Token mal formatado	            protected_mal_formatado.sh
 
 ## 🧾 Licença
 
-Este projeto está sob a licença MIT.
+Este projeto está sob a licença MIT. 
