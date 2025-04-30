@@ -7,6 +7,10 @@ const register = async (name, email, password) => {
     throw new Error('A senha não pode estar vazia.');
   }
 
+  if (!email || !email.includes('@')) {
+    throw new Error('Por favor, insira um e-mail válido.');
+  }
+  
   const existingUser = await User.findOne({ email });
   if (existingUser) throw new Error('E-mail já registrado');
 
