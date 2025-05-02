@@ -3,10 +3,13 @@ const router = express.Router();
 const bookController = require('../controllers/bookController');
 const authMiddleware = require('../middlewares/authMiddleware');
 
-// Rota protegida para adicionar um livro
-router.post('/books', authMiddleware, bookController.createBook);
+router.use(authMiddleware); 
 
-// Rota protegida para listar livros do usuário
-router.get('/books', authMiddleware, bookController.listBooks);
+router.post('/books', bookController.createBook);
+router.get('/books', bookController.listBooks);
+router.get('/books/:id', bookController.getBook);
+router.put('/books/:id', bookController.updateBook);
+router.patch('/books/:id', bookController.updateBook); 
+router.delete('/books/:id', bookController.deleteBook);
 
 module.exports = router;
